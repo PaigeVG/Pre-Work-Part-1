@@ -10,27 +10,25 @@
       Appears to be a modal box. Aside is a community-accepted semantic tag for modals according to: 
       https://stackoverflow.com/questions/3072597/semantically-accurate-html5-element-for-a-modal-dialog
     -->
-    <aside class="container">
-      <div class="modal-header">
-        <h1><span class="extra-bold-text">$167</span> still needed for this project</h1>
-      </div>
+    <aside class="funding-modal">
+      <header>
+        <h1><span class="bold-text">$167</span> still needed for this project</h1>
+      </header>
       <div class="arrow-down"></div>
-      <div class="funding-bar">
-        <div></div>
-      </div>
-      <div class="modal-main">
+      <progress value="80" max="100"> </progress>
+      <section class="modal-main">
         <p><strong class="orange-bold-text">Only 3 days left</strong> to fund this project.</p>
-          <p>Join the <span class="bold-text">42</span> other donors who have already supported this project. Every dollar helps.</p>
-          <form action="">
-            <input type="text">
-            <button class="submit-button">Give Now</button>
-          </form>
-          <a href="" class="info-link">Why give $50?</a>
-      </div>
-      <div class="modal-footer">        
-        <button class="aux-button">Save for later</button>
-        <button class="aux-button">Tell your friends</button>
-      </div>
+        <p>Join the <span class="bold-text">42</span> other donors who have already supported this project. Every dollar helps.</p>
+        <form action="">
+          <div><span class="dollar-sign">$</span><input type="text" value = "50"></div>
+          <button>Give Now</button>
+        </form>
+        <a href="">Why give $50?</a>
+        </section>
+      <footer>
+        <button>Save for later</button>
+        <button>Tell your friends</button>
+      </footer>
     </aside>
   </body>
 </html>

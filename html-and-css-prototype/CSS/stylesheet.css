@@ -8,7 +8,7 @@
 body {
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	color: #424242;
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 /* Fonts */
@@ -17,14 +17,6 @@ h1 {
 	font-size: 2.5em;
 	font-weight: bold;
 }
-
-.container {
-	margin: 2em auto;
-	max-width: 630px;
-	/* text-align: center; */
-	min-width: 630px;
-}
-
 
 
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
@@ -40,20 +32,13 @@ h1 {
   light grey: #eaeaea;
 */
 
-input {
-	min-width: 0;
+.funding-modal {
+	margin: 2em auto;
+	max-width: 630px;
+	min-width: 630px;
 }
 
-.arrow-down {
-  width: 0; 
-  height: 0; 
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-	border-top: 13px solid #424242;
-	margin-left: 85%;
-}
-
-.modal-header {
+.funding-modal header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -62,84 +47,117 @@ input {
 	height: 6.5rem;
 }
 
-.modal-header h1 {
+.funding-modal header h1 {
 	color: #eaeaea;
 	font-size: 1.8rem;
 	text-align: center;
+	font-weight: normal;
 }
 
-.funding-bar {
-	border: medium solid #eaeaea;
-	display: flex;
-	height: 2.0rem;
+.funding-modal .arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+	border-top: 13px solid #424242;
+	margin-left: 85%;
+	margin-bottom: 0.5rem;
+}
+
+.funding-modal progress {
+	background-color: white;
+	color: #EF5F3C;
+	border: 2px solid #d3d2d2;
 	padding: 1px;
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 2.0rem;
 }
 
-.funding-bar div {
-	background: #EF5F3C;
-	height: 100%;
-	width: 75%;
-}
+.funding-modal progress::-moz-progress-bar { background: #EF5F3C; }
+.funding-modal progress::-webkit-progress-value { background: #EF5F3C; }
+.funding-modal progress::-moz-progress-bar { background: #EF5F3C; }
 
-.modal-main {
+.funding-modal .modal-main {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	border: medium solid #eaeaea;
+	border: 2px solid #d3d2d2;
 	border-top: none;
 	font-size: 1.6rem;
 	color: #777;
-	padding: 2.2rem;
+	padding: 2.5rem;
+	padding-top: 1.7rem;
+	margin-top: -4px;
+	box-shadow: 0px 5px #f1f1f1;
 }
 
-.modal-main p {
-	margin-bottom: 2.0rem;
+.funding-modal .modal-main p {
+	margin-bottom: 1.8rem;
 	width: 90%;
 }
 
-
-.modal-main a {
+.funding-modal .modal-main a {
 	color: #20A1D4;
 	font-style: italic;
 	text-decoration: none;
-	margin-top: 1.2rem;
+	margin-top: 1.0rem;
 }
 
-.modal-main button {
-	background: #1CBC2C;
-	color: white;
-	font-size: 2.2rem;
-	font-weight: bold;
-	border-radius: 5px;
-	border: 2px solid  rgb(27, 175, 42);
-	border-bottom: 5px solid  rgb(27, 175, 42);
-}
-
-.modal-main form {
+.funding-modal .modal-main form {
+	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	height: 6.0rem;
 }
 
-.modal-main form > * {
-	flex-basis: 45%;
+.funding-modal .modal-main form * {
+	font-size: 2.2rem;
+	font-weight: bold;
+	height: 100%;
 }
 
-.modal-footer {
+.funding-modal .modal-main form > * {
+	flex-basis: 47%;
+}
+
+.funding-modal .modal-main form input {
+	width: 100%;
+	padding-left: 3.0rem;
+	min-width: 0;
+}
+
+.funding-modal .modal-main form button {
+	background: #1CBC2C;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid  rgb(27, 175, 42);
+	border-bottom: 5px solid  rgb(27, 175, 42);
+}
+
+.funding-modal .modal-main form .dollar-sign {
+	position: absolute;
+	top: 22%;
+	left: 3%;
+}
+
+.funding-modal footer {
 	display: flex;
 	justify-content: space-between;
 }
 
-.modal-footer button {
+.funding-modal footer button {
 	background: white;
-	flex-basis: 45%;
+	flex-basis: 47%;
 	color: #777;
-	height: 5.0rem;
+	height: 5.3rem;
 	font-weight: bold;
 	font-size: 1.5rem;
-	border: 2px solid #eaeaea;
-	border-bottom: 4px solid  #eaeaea;
+	border: 2px solid #d3d2d2;
+	border-bottom: 4px solid #d3d2d2;
 	border-radius: 5px;
 	margin-top: 2.0rem;
 }
@@ -151,4 +169,10 @@ input {
 
 .bold-text {
 	font-weight: bold;
+}
+
+
+
+
+input {
 }
