@@ -32,147 +32,140 @@ h1 {
   light grey: #eaeaea;
 */
 
-.funding-modal {
+#funding-modal {
 	margin: 2em auto;
 	max-width: 630px;
 	min-width: 630px;
 }
 
-.funding-modal header {
+#funding-modal header {
+	background: #424242;
+	border-radius: 0.4rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: #424242;
-	border-radius: 0.4rem;
 	height: 6.5rem;
 }
 
-.funding-modal header h1 {
+#funding-modal header h1 {
 	color: #eaeaea;
 	font-size: 1.8rem;
-	text-align: center;
 	font-weight: normal;
+	text-align: center;
 }
 
-.funding-modal .arrow-down {
-  width: 0; 
-  height: 0; 
+#funding-modal .arrow-down {
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
 	border-top: 13px solid #424242;
-	margin-left: 85%;
 	margin-bottom: 0.5rem;
+	margin-left: 85%;
+  height: 0; 
+  width: 0; 
 }
 
-.funding-modal progress {
-	background-color: white;
-	color: #EF5F3C;
-	border: 2px solid #d3d2d2;
-	padding: 1px;
-	width: 100%;
+#funding-modal progress {
+	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	background-color: white;
+	border: 2px solid #d3d2d2;
+	color: #EF5F3C;
+	padding: 1px;
 	height: 2.0rem;
+	width: 100%;
 }
 
-.funding-modal progress::-moz-progress-bar { background: #EF5F3C; }
-.funding-modal progress::-webkit-progress-value { background: #EF5F3C; }
-.funding-modal progress::-moz-progress-bar { background: #EF5F3C; }
+#funding-modal progress::-moz-progress-bar { background: #EF5F3C; }
+#funding-modal progress::-webkit-progress-value { background: #EF5F3C; }
+#funding-modal progress::-moz-progress-bar { background: #EF5F3C; }
 
-.funding-modal .modal-main {
+#modal-main {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	border: 2px solid #d3d2d2;
 	border-top: none;
 	font-size: 1.6rem;
-	color: #777;
-	padding: 2.5rem;
+	padding: 2.6rem;
 	padding-top: 1.7rem;
 	margin-top: -4px;
+	color: #777;
 	box-shadow: 0px 5px #f1f1f1;
 }
 
-.funding-modal .modal-main p {
+#modal-main p {
 	margin-bottom: 1.8rem;
 	width: 90%;
 }
 
-.funding-modal .modal-main a {
+#modal-main a {
 	color: #20A1D4;
 	font-style: italic;
-	text-decoration: none;
 	margin-top: 1.0rem;
+	text-decoration: none;
 }
 
-.funding-modal .modal-main form {
-	position: relative;
-	width: 100%;
+#modal-main form {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	height: 6.0rem;
+	width: 100%;
 }
 
-.funding-modal .modal-main form * {
+#modal-main form * {
 	font-size: 2.2rem;
 	font-weight: bold;
 	height: 100%;
 }
 
-.funding-modal .modal-main form > * {
+#modal-main form > * {
 	flex-basis: 47%;
 }
 
-.funding-modal .modal-main form input {
-	width: 100%;
-	padding-left: 3.0rem;
+#modal-main form input {
 	min-width: 0;
+	padding-left: 3.0rem;
+	width: 100%;
 }
 
-.funding-modal .modal-main form button {
+#modal-main form button {
 	background: #1CBC2C;
-	color: white;
+	border: 2px solid  #1baf2a;
+	border-bottom: 5px solid  #1baf2a;
 	border-radius: 5px;
-	border: 2px solid  rgb(27, 175, 42);
-	border-bottom: 5px solid  rgb(27, 175, 42);
+	color: white;
 }
 
-.funding-modal .modal-main form .dollar-sign {
+#modal-main form .dollar-sign {
 	position: absolute;
 	top: 22%;
 	left: 3%;
 }
 
-.funding-modal footer {
+#funding-modal footer {
 	display: flex;
 	justify-content: space-between;
 }
 
-.funding-modal footer button {
+#funding-modal footer button {
 	background: white;
-	flex-basis: 47%;
 	color: #777;
-	height: 5.3rem;
-	font-weight: bold;
-	font-size: 1.5rem;
 	border: 2px solid #d3d2d2;
 	border-bottom: 4px solid #d3d2d2;
 	border-radius: 5px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	flex-basis: 47%;
+	height: 5.3rem;
 	margin-top: 2.0rem;
 }
 
-.orange-bold-text {
+.orange-text {
 	color: #EF5F3C;
-	font-weight: bold;
 }
 
 .bold-text {
 	font-weight: bold;
-}
-
-
-
-
-input {
 }
